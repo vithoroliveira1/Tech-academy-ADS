@@ -4,7 +4,7 @@ const navMenu = document.querySelector('.nav-menu');
 const navLinks = document.querySelectorAll('.nav-link');
 const header = document.querySelector('.header');
 const contactForm = document.querySelector('.contact-form');
-const videoPlayBtn = document.querySelector('.video-play-btn');
+const downloadButtons = document.querySelectorAll('.btn-download');
 
 // Mobile Navigation Toggle
 hamburger.addEventListener('click', () => {
@@ -23,10 +23,10 @@ navLinks.forEach(link => {
 // Header scroll effect
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
-        header.style.background = 'rgba(26, 26, 46, 0.98)';
+        header.style.background = 'rgba(46, 64, 83, 0.98)';
         header.style.backdropFilter = 'blur(15px)';
     } else {
-        header.style.background = 'rgba(26, 26, 46, 0.95)';
+        header.style.background = 'rgba(46, 64, 83, 0.95)';
         header.style.backdropFilter = 'blur(10px)';
     }
 });
@@ -70,7 +70,7 @@ contactForm.addEventListener('submit', function(e) {
     }
     
     // Simulate form submission
-    showNotification('Mensagem enviada com sucesso! Entraremos em contato em breve.', 'success');
+    showNotification('🏴‍☠️ Bem-vindo à tripulação! Você receberá nossas curiosidades em breve!', 'success');
     this.reset();
 });
 
@@ -118,7 +118,7 @@ function showNotification(message, type = 'info') {
             notification.style.background = 'linear-gradient(135deg, #dc3545, #e74c3c)';
             break;
         default:
-            notification.style.background = 'linear-gradient(135deg, #00d4ff, #0099cc)';
+            notification.style.background = 'linear-gradient(135deg, #3498db, #2980b9)';
     }
     
     // Add to DOM and animate in
@@ -138,14 +138,19 @@ function showNotification(message, type = 'info') {
     }, 5000);
 }
 
-// Video play button functionality
-if (videoPlayBtn) {
-    videoPlayBtn.addEventListener('click', function() {
-        // Here you would typically open a modal with the actual video
-        // For now, we'll just show a notification
-        showNotification('Funcionalidade de vídeo será implementada em breve!', 'info');
+// Download wallpaper functionality
+downloadButtons.forEach(button => {
+    button.addEventListener('click', function() {
+        const wallpaperCard = this.closest('.wallpaper-card');
+        const wallpaperTitle = wallpaperCard.querySelector('h4').textContent;
+        
+        // Simulate download
+        showNotification(`🌊 Baixando wallpaper: ${wallpaperTitle}!`, 'success');
+        
+        // Here you would implement actual download functionality
+        // For now, we'll just show the notification
     });
-}
+});
 
 // Intersection Observer for fade-in animations
 const observerOptions = {
@@ -174,11 +179,15 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(header);
     });
     
-    // Observe about section
-    const aboutText = document.querySelector('.about-text');
-    const aboutImage = document.querySelector('.about-image');
-    if (aboutText) observer.observe(aboutText);
-    if (aboutImage) observer.observe(aboutImage);
+    // Observe curiosidades section
+    document.querySelectorAll('.curiosidade-card').forEach(card => {
+        observer.observe(card);
+    });
+    
+    // Observe wallpapers section
+    document.querySelectorAll('.wallpaper-card').forEach(card => {
+        observer.observe(card);
+    });
     
     // Observe contact section
     const contactInfo = document.querySelector('.contact-info');
@@ -215,7 +224,7 @@ window.addEventListener('load', () => {
     
     // Animate hero section
     const heroText = document.querySelector('.hero-text');
-    const heroVideo = document.querySelector('.hero-video');
+    const heroImage = document.querySelector('.hero-image');
     
     if (heroText) {
         heroText.style.opacity = '0';
@@ -227,13 +236,13 @@ window.addEventListener('load', () => {
         }, 200);
     }
     
-    if (heroVideo) {
-        heroVideo.style.opacity = '0';
-        heroVideo.style.transform = 'translateX(30px)';
+    if (heroImage) {
+        heroImage.style.opacity = '0';
+        heroImage.style.transform = 'translateX(30px)';
         setTimeout(() => {
-            heroVideo.style.transition = 'all 0.8s ease';
-            heroVideo.style.opacity = '1';
-            heroVideo.style.transform = 'translateX(0)';
+            heroImage.style.transition = 'all 0.8s ease';
+            heroImage.style.opacity = '1';
+            heroImage.style.transform = 'translateX(0)';
         }, 400);
     }
 });
@@ -266,10 +275,10 @@ const optimizedScrollHandler = debounce(() => {
     
     // Update header background
     if (scrollY > 100) {
-        header.style.background = 'rgba(26, 26, 46, 0.98)';
+        header.style.background = 'rgba(46, 64, 83, 0.98)';
         header.style.backdropFilter = 'blur(15px)';
     } else {
-        header.style.background = 'rgba(26, 26, 46, 0.95)';
+        header.style.background = 'rgba(46, 64, 83, 0.95)';
         header.style.backdropFilter = 'blur(10px)';
     }
 }, 10);
@@ -278,6 +287,7 @@ window.addEventListener('scroll', optimizedScrollHandler);
 
 // Console welcome message
 console.log(`
-🚀 Tech Academy Website
-Desenvolvido com ❤️ usando HTML, CSS e JavaScript
+🏴‍☠️ One Piece World - Curiosidades e Aventuras! 🌊
+Desenvolvido com ❤️ para todos os fãs de One Piece
+⚓ Navegue pelos mares do conhecimento!
 `);
