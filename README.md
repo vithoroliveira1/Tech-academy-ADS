@@ -1,69 +1,110 @@
-# 🏴‍☠️ One Piece World - Curiosidades e Aventuras
+# 🏴‍☠️ One Piece World - Site de Curiosidades
 
-Um site responsivo e temático sobre One Piece, repleto de curiosidades incríveis sobre o mangá mais vendido da história! Desenvolvido com HTML, CSS e JavaScript vanilla.
+![One Piece World](https://img.shields.io/badge/One%20Piece-World%20Site-red)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
-## 🌊 Funcionalidades
+## 🌊 Sobre o Projeto
 
-- **Design Responsivo**: Funciona perfeitamente em desktop, tablet e mobile
-- **Navegação Suave**: Scroll suave entre seções com tema pirata
-- **Menu Mobile**: Hamburger menu adaptado ao tema
-- **Animações Temáticas**: Efeitos inspirados no mundo de One Piece
-- **Galeria de Wallpapers**: Download de wallpapers HD
-- **Curiosidades Detalhadas**: Fatos fascinantes sobre a obra
-- **Newsletter Pirata**: Sistema de inscrição para atualizações
+**One Piece World** é um site completo dedicado aos fãs de One Piece, o mangá mais vendido da história. O projeto foi desenvolvido como parte do curso de Análise e Desenvolvimento de Sistemas da Tech Academy.
 
-## ⚓ Seções
+### ✨ Funcionalidades
 
-1. **Header/Navegação**: Menu fixo com identidade One Piece
-2. **Hero Section**: Banner principal com chamada para aventura
-3. **Preview Curiosidades**: Cards com curiosidades em destaque
-4. **Curiosidades Completas**: Todas as curiosidades detalhadas
-5. **Wallpapers**: Galeria de wallpapers para download
-6. **Contato**: Formulário de inscrição para newsletter
-7. **Footer**: Links úteis e redes sociais temáticas
+- **🏠 Página Inicial**: Apresentação do mundo de One Piece com seção hero
+- **🧭 Curiosidades**: Fatos interessantes sobre a obra de Eiichiro Oda
+- **🖼️ Wallpapers**: Galeria de imagens para download
+- **📧 Contato**: Formulário de inscrição para novidades
+- **📱 Design Responsivo**: Otimizado para todos os dispositivos
 
-## 🛠️ Tecnologias Utilizadas
+## 🚀 Tecnologias Utilizadas
 
-- **HTML5**: Estrutura semântica
-- **CSS3**: Flexbox, Grid, animações e responsividade
-- **JavaScript ES6+**: Interatividade e funcionalidades
-- **Font Awesome**: Ícones temáticos
-- **Google Fonts**: Tipografia (Montserrat)
+- **HTML5**: Estrutura semântica e acessível
+- **CSS3**: Estilos modernos com Flexbox e Grid
+- **JavaScript**: Interatividade e funcionalidades dinâmicas
+- **Font Awesome**: Ícones profissionais
+- **Google Fonts**: Tipografia Montserrat
 
-## 🎨 Características do Design
+## 📁 Estrutura do Projeto
 
-- **Paleta de Cores**: Vermelho (#e74c3c), Laranja (#f39c12) e Azul marinho (#2c3e50)
-- **Tipografia**: Montserrat (forte e legível)
-- **Layout**: Mobile-first com abordagem responsiva
-- **Tema Pirata**: Elementos visuais inspirados em One Piece
-- **Animações**: Suaves e temáticas
+```
+TECH-ACADEMY/
+├── index.html          # Página principal
+├── curiosidades.html   # Página de curiosidades
+├── wallpapers.html     # Galeria de wallpapers
+├── contato.html        # Formulário de contato
+├── styles.css          # Estilos CSS
+├── script.js           # JavaScript
+├── images/             # Pasta de imagens
+│   ├── logo-one-piece.png
+│   ├── Nami-740x416.png
+│   ├── Oda_small.jpg
+│   └── ... (outras imagens)
+└── README.md           # Este arquivo
+```
 
-## 📦 Como Usar
+## 🎯 Características do Design
+
+- **🎨 Interface Moderna**: Design limpo e profissional
+- **♿ Acessibilidade**: Seguindo padrões WCAG
+- **📱 Responsivo**: Funciona perfeitamente em mobile, tablet e desktop
+- **⚡ Performance**: Otimizado para carregamento rápido
+- **🔍 SEO**: Meta tags e estrutura otimizada para motores de busca
+
+## 🌐 Como Acessar
+
+O site está disponível através dos arquivos HTML locais. Para visualizar:
 
 1. Clone o repositório
-2. Abra o `index.html` no navegador
-3. Ou use um servidor local como Live Server
+2. Abra o arquivo `index.html` em seu navegador
+3. Navegue pelas diferentes páginas
 
-## 🌐 Deploy
+## 📱 Páginas Disponíveis
 
-Este projeto está configurado para ser facilmente hospedado no GitHub Pages.
+### 🏠 **Início** (`index.html`)
+- Seção hero com chamada para ação
+- Preview das curiosidades
+- Navegação principal
 
-## 🏴‍☠️ Conteúdo Incluído
+### 🧭 **Curiosidades** (`curiosidades.html`)
+- Fatos sobre One Piece
+- Informações sobre Eiichiro Oda
+- Dados sobre o mangá
 
-- **7 Curiosidades Detalhadas**: Fatos incríveis sobre One Piece
-- **6 Wallpapers Temáticos**: Imagens HD para download
-- **Design Responsivo**: Adaptado para todos os dispositivos
-- **Tema Autêntico**: Cores e elementos do universo One Piece
+### 🖼️ **Wallpapers** (`wallpapers.html`)
+- Galeria de imagens
+- Download de wallpapers
+- Imagens em alta qualidade
 
-## 📝 Customização
+### 📧 **Contato** (`contato.html`)
+- Formulário de inscrição
+- Newsletter sobre One Piece
+- Integração com redes sociais
 
-O projeto foi estruturado para ser facilmente customizável:
+## 🚀 Como Contribuir
 
-- Modifique as cores no arquivo `styles.css`
-- Substitua os wallpapers placeholder pelos seus próprios
-- Adicione novas curiosidades no `index.html`
-- Implemente funcionalidades no `script.js`
+1. Faça um Fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
+3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
+4. Push para a branch (`git push origin feature/AmazingFeature`)
+5. Abra um Pull Request
 
-## 📄 Licença
+## 📝 Licença
 
-Este projeto é de uso educacional e pode ser modificado conforme necessário. One Piece © Eiichiro Oda.
+Este projeto é de uso educacional e foi criado para fins de aprendizado. One Piece é uma propriedade de Eiichiro Oda e Shueisha.
+
+## 👨‍💻 Desenvolvedor
+
+**Vithor Oliveira** - Estudante de Análise e Desenvolvimento de Sistemas na Tech Academy
+
+## 🙏 Agradecimentos
+
+- **Eiichiro Oda** pela criação de One Piece
+- **Tech Academy** pela oportunidade de aprendizado
+- **Comunidade One Piece** pela inspiração
+
+---
+
+⭐ **Se este projeto te ajudou, deixe uma estrela no repositório!**
+
+🏴‍☠️ **Que a força dos Chapéus de Palha esteja com você!**
