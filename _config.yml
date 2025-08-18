@@ -1,0 +1,36 @@
+# Configuração do GitHub Pages
+title: One Piece World
+description: Site de curiosidades sobre One Piece - O mangá mais vendido da história
+author: Vithor Oliveira
+email: vithor.oliveira@techacademy.com
+
+# Configurações de SEO
+url: https://vithoroliveira1.github.io/Tech-academy-ADS
+baseurl: /Tech-academy-ADS
+
+# Configurações de tema
+theme: jekyll-theme-cayman
+
+# Configurações de plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Configurações de build
+exclude:
+  - .gitignore
+  - README.md
+  - .github/
+  - node_modules/
+  - package.json
+  - package-lock.json
+
+# Configurações de compressão
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  profile: false
+  blanklines: false
+  ignore:
+    envs: []
