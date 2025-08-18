@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubra curiosidades incríveis sobre One Piece, o mangá mais vendido da história. Wallpapers, fatos e aventuras pelos mares da Grand Line.">
+    <meta name="keywords" content="One Piece, Luffy, Eiichiro Oda, mangá, anime, curiosidades, wallpapers, Grand Line, piratas">
+    <meta name="author" content="One Piece World">
+    <meta name="robots" content="index, follow">
+    
+   
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
     <title>One Piece World - Curiosidades e Aventuras</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -10,267 +19,116 @@
 </head>
 <body>
     <!-- Header/Navigation -->
-    <header class="header">
-        <nav class="navbar">
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Navegação principal">
             <div class="nav-container">
                 <div class="nav-logo">
-                    <h2>🏴‍☠️ One Piece World</h2>
+                    <a href="index.html" class="logo-link">
+                        <h2 class="logo-text-only">🏴‍☠️ One Piece World</h2>
+                    </a>
                 </div>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="#home" class="nav-link">Início</a>
+                <ul class="nav-menu" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a href="#home" class="nav-link" role="menuitem" aria-current="page">Início</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#curiosidades" class="nav-link">Curiosidades</a>
+                    <li class="nav-item" role="none">
+                        <a href="curiosidades.html" class="nav-link" role="menuitem">Curiosidades</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#wallpapers" class="nav-link">Wallpapers</a>
+                    <li class="nav-item" role="none">
+                        <a href="wallpapers.html" class="nav-link" role="menuitem">Wallpapers</a>
                     </li>
-                    <li class="nav-item">
-                        <a href="#contato" class="nav-link">Contato</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link btn-subscribe">Inscrever-se</a>
+                    <li class="nav-item" role="none">
+                        <a href="contato.html" class="nav-link btn-subscribe" role="menuitem">Inscrever-se</a>
                     </li>
                 </ul>
-                <div class="hamburger">
+                <button class="hamburger" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
-                </div>
+                </button>
             </div>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="hero-overlay"></div>
-            <div class="hero-content">
-                <div class="hero-text">
-                    <h1>Bem-vindo ao Mundo de One Piece! 🌊</h1>
-                    <p>Descubra curiosidades incríveis sobre o mangá mais vendido da história e embarque nesta grande aventura pelos mares da Grand Line!</p>
-                    <div class="hero-buttons">
-                        <a href="#curiosidades" class="btn btn-primary">Explorar Curiosidades</a>
-                        <a href="#wallpapers" class="btn btn-secondary">Ver Wallpapers</a>
+    <!-- Main Content -->
+    <main role="main">
+        <!-- Hero Section -->
+        <section id="home" class="hero" aria-labelledby="hero-title">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 id="hero-title">Bem-vindo ao Mundo de One Piece! 🌊</h1>
+                        <p>Descubra curiosidades incríveis sobre o mangá mais vendido da história e embarque nesta grande aventura pelos mares da Grand Line!</p>
+                        <div class="hero-buttons" role="group" aria-label="Ações principais">
+                            <a href="curiosidades.html" class="btn btn-primary" aria-describedby="hero-title">Explorar Curiosidades</a>
+                            <a href="wallpapers.html" class="btn btn-secondary" aria-describedby="hero-title">Ver Wallpapers</a>
+                        </div>
                     </div>
-                </div>
-                <div class="hero-image">
-                    <div class="image-container">
-                        <img src="https://via.placeholder.com/500x300/DC2626/FFFFFF?text=🏴‍☠️+One+Piece+World" alt="One Piece - Tripulação Chapéu de Palha" class="hero-img">
-                    </div>
+                    <aside class="hero-image">
+                        <figure class="image-container">
+                            <img src="images/a0cb3885c44b8305ac89ba7ce98e8cd978bf3ebba6a151a00dbf2d528e98bf3b.jpg" 
+                                 alt="One Piece - Tripulação Chapéu de Palha navegando pelo mar" 
+                                 class="hero-img"
+                                 loading="eager"
+                                 width="600"
+                                 height="400"
+                                 decoding="sync">
+                        </figure>
+                    </aside>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Preview Curiosidades Section -->
-    <section id="preview-curiosidades" class="features">
-        <div class="container">
-            <div class="section-header">
-                <h2>🏴‍☠️ Curiosidades de One Piece</h2>
-                <p>Descubra fatos incríveis sobre o mundo criado por Eiichiro Oda</p>
+        <!-- Preview Curiosidades Section -->
+        <section id="preview-curiosidades" class="features">
+            <div class="container">
+                <header class="section-header">
+                    <h2>🏴‍☠️ Curiosidades de One Piece</h2>
+                    <p>Descubra fatos incríveis sobre o mundo criado por Eiichiro Oda</p>
+                </header>
+                <div class="features-grid">
+                    <article class="feature-card">
+                        <header class="feature-icon">
+                            <i class="fas fa-book" aria-hidden="true"></i>
+                        </header>
+                        <h3>🌊 Origem do Nome</h3>
+                        <p>Eiichiro Oda escolheu "One Piece" para representar não apenas o tesouro, mas também a ideia de "um mundo unido como uma só peça"</p>
+                        <a href="curiosidades.html" class="feature-link" aria-label="Ver mais sobre a origem do nome One Piece">Ver Mais</a>
+                    </article>
+                    <article class="feature-card">
+                        <header class="feature-icon">
+                            <i class="fas fa-trophy" aria-hidden="true"></i>
+                        </header>
+                        <h3>🏆 Recorde Mundial</h3>
+                        <p>One Piece é o mangá mais vendido da história, com mais de 500 milhões de cópias vendidas mundialmente!</p>
+                        <a href="curiosidades.html" class="feature-link" aria-label="Ver mais sobre o recorde mundial de vendas">Ver Mais</a>
+                    </article>
+                    <article class="feature-card">
+                        <header class="feature-icon">
+                            <i class="fas fa-drumstick-bite" aria-hidden="true"></i>
+                        </header>
+                        <h3>🍖 Luffy e a Carne</h3>
+                        <p>O protagonista ama carne mais que qualquer coisa. Oda disse que se Luffy fosse um animal, seria um macaco pelo apetite insaciável</p>
+                        <a href="curiosidades.html" class="feature-link" aria-label="Ver mais sobre o amor do Luffy por carne">Ver Mais</a>
+                    </article>
+                    <article class="feature-card">
+                        <header class="feature-icon">
+                            <i class="fas fa-question" aria-hidden="true"></i>
+                        </header>
+                        <h3>❓ Mistério do "D."</h3>
+                        <p>A inicial "D." presente em nomes como Luffy, Roger e Teach ainda é um dos maiores mistérios da obra</p>
+                        <a href="curiosidades.html" class="feature-link" aria-label="Ver mais sobre o mistério da inicial D">Ver Mais</a>
+                    </article>
+                </div>
+                <footer class="section-footer">
+                    <a href="curiosidades.html" class="btn btn-primary" aria-label="Ver todas as curiosidades de One Piece">Ver Todas as Curiosidades</a>
+                </footer>
             </div>
-            <div class="features-grid">
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-book"></i>
-                    </div>
-                    <h3>🌊 Origem do Nome</h3>
-                    <p>Eiichiro Oda escolheu "One Piece" para representar não apenas o tesouro, mas também a ideia de "um mundo unido como uma só peça"</p>
-                    <a href="#curiosidades" class="feature-link">Ver Mais</a>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <h3>🏆 Recorde Mundial</h3>
-                    <p>One Piece é o mangá mais vendido da história, com mais de 500 milhões de cópias vendidas mundialmente!</p>
-                    <a href="#curiosidades" class="feature-link">Ver Mais</a>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-drumstick-bite"></i>
-                    </div>
-                    <h3>🍖 Luffy e a Carne</h3>
-                    <p>O protagonista ama carne mais que qualquer coisa. Oda disse que se Luffy fosse um animal, seria um macaco pelo apetite insaciável</p>
-                    <a href="#curiosidades" class="feature-link">Ver Mais</a>
-                </div>
-                <div class="feature-card">
-                    <div class="feature-icon">
-                        <i class="fas fa-question"></i>
-                    </div>
-                    <h3>❓ Mistério do "D."</h3>
-                    <p>A inicial "D." presente em nomes como Luffy, Roger e Teach ainda é um dos maiores mistérios da obra</p>
-                    <a href="#curiosidades" class="feature-link">Ver Mais</a>
-                </div>
-            </div>
-            <div class="section-footer">
-                <a href="#curiosidades" class="btn btn-primary">Ver Todas as Curiosidades</a>
-            </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    <!-- Curiosidades Completas Section -->
-    <section id="curiosidades" class="curiosidades">
-        <div class="container">
-            <div class="section-header">
-                <h2>🏴‍☠️ Todas as Curiosidades</h2>
-                <p>Mergulhe profundamente nos segredos e fatos fascinantes de One Piece</p>
-            </div>
-            <div class="curiosidades-grid">
-                <article class="curiosidade-card">
-                    <div class="curiosidade-icon">🌊</div>
-                    <h3>Origem do nome "One Piece"</h3>
-                    <p>Eiichiro Oda, criador da obra, escolheu o nome One Piece para se referir ao tesouro supremo deixado pelo Rei dos Piratas, Gol D. Roger. Mas, além disso, ele também quis transmitir a ideia de "um mundo unido como uma só peça", algo que se conecta com o espírito de aventura e liberdade dos personagens.</p>
-                </article>
-                
-                <article class="curiosidade-card">
-                    <div class="curiosidade-icon">🏴‍☠️</div>
-                    <h3>O recorde de vendas</h3>
-                    <p>One Piece é o mangá mais vendido da história, ultrapassando a marca de 500 milhões de cópias no mundo todo. Só para comparar: ele vendeu mais que Batman e até mesmo Harry Potter em versões impressas!</p>
-                </article>
-                
-                <article class="curiosidade-card">
-                    <div class="curiosidade-icon">🍖</div>
-                    <h3>O prato favorito do Luffy</h3>
-                    <p>O protagonista Monkey D. Luffy ama carne mais do que qualquer coisa no mundo. Eiichiro Oda já disse em entrevistas que, se Luffy fosse um animal, ele seria um macaco, justamente por causa do seu apetite insaciável por carne.</p>
-                </article>
-                
-                <article class="curiosidade-card">
-                    <div class="curiosidade-icon">👁️</div>
-                    <h3>O mistério do "D."</h3>
-                    <p>Diversos personagens possuem a inicial "D." em seus nomes, como Monkey D. Luffy, Gol D. Roger e Marshall D. Teach. O significado por trás dessa letra ainda é um dos maiores mistérios da obra, conhecido como a "Vontade do D."</p>
-                </article>
-                
-                <article class="curiosidade-card">
-                    <div class="curiosidade-icon">🎬</div>
-                    <h3>Inspiração nos piratas reais</h3>
-                    <p>Muitos personagens de One Piece foram inspirados em piratas que realmente existiram. Por exemplo, o temido Barba Negra (Marshall D. Teach) leva o sobrenome de Edward Teach, que foi um pirata inglês do século XVIII.</p>
-                </article>
-                
-                <article class="curiosidade-card">
-                    <div class="curiosidade-icon">⏳</div>
-                    <h3>Oda e o planejamento</h3>
-                    <p>Eiichiro Oda revelou que pensou em One Piece ainda na adolescência e já tinha o final planejado antes mesmo da obra estrear em 1997. Hoje, mais de 25 anos depois, ele segue firme trabalhando no mangá e preparando os fãs para o desfecho.</p>
-                </article>
-                
-                <article class="curiosidade-card">
-                    <div class="curiosidade-icon">🐳</div>
-                    <h3>A baleia Laboon</h3>
-                    <p>Laboon, a baleia que os Chapéus de Palha conhecem no início da Grande Rota Marítima, foi inspirada em um baleia que Oda viu em um documentário. Ele quis retratar a solidão do animal de forma emocionante, criando uma das histórias mais tristes e marcantes de One Piece.</p>
-                </article>
-            </div>
-        </div>
-    </section>
 
-    <!-- Wallpapers Section -->
-    <section id="wallpapers" class="wallpapers">
-        <div class="container">
-            <div class="section-header">
-                <h2>🖼️ Wallpapers One Piece</h2>
-                <p>Baixe wallpapers incríveis para personalizar seus dispositivos</p>
-            </div>
-            <div class="wallpapers-grid">
-                <div class="wallpaper-card">
-                    <img src="https://via.placeholder.com/400x250/1A1A1A/FFFFFF?text=🏴‍☠️+Logo+One+Piece" alt="Logo One Piece">
-                    <div class="wallpaper-overlay">
-                        <h4>🏴‍☠️ Logo One Piece</h4>
-                        <div class="wallpaper-actions">
-                            <button class="btn-download"><i class="fas fa-download"></i> Download</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="wallpaper-card">
-                    <img src="https://via.placeholder.com/400x250/3498DB/FFFFFF?text=🌊+Luffy+Liberdade" alt="Luffy Liberdade">
-                    <div class="wallpaper-overlay">
-                        <h4>🌊 Luffy - Liberdade</h4>
-                        <div class="wallpaper-actions">
-                            <button class="btn-download"><i class="fas fa-download"></i> Download</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="wallpaper-card">
-                    <img src="https://via.placeholder.com/400x250/8E44AD/FFFFFF?text=❓+Mistérios+OP" alt="Mistérios One Piece">
-                    <div class="wallpaper-overlay">
-                        <h4>❓ Mistérios de One Piece</h4>
-                        <div class="wallpaper-actions">
-                            <button class="btn-download"><i class="fas fa-download"></i> Download</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="wallpaper-card">
-                    <img src="https://via.placeholder.com/400x250/2ECC71/FFFFFF?text=✏️+Eiichiro+Oda" alt="Eiichiro Oda">
-                    <div class="wallpaper-overlay">
-                        <h4>✏️ Eiichiro Oda - Criador</h4>
-                        <div class="wallpaper-actions">
-                            <button class="btn-download"><i class="fas fa-download"></i> Download</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="wallpaper-card">
-                    <img src="https://via.placeholder.com/400x250/E67E22/FFFFFF?text=🐳+Baleia+Laboon" alt="Baleia Laboon">
-                    <div class="wallpaper-overlay">
-                        <h4>🐳 Baleia Laboon</h4>
-                        <div class="wallpaper-actions">
-                            <button class="btn-download"><i class="fas fa-download"></i> Download</button>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="wallpaper-card">
-                    <img src="https://via.placeholder.com/400x250/E74C3C/FFFFFF?text=👥+Tripulação+Mugiwara" alt="Tripulação Chapéu de Palha">
-                    <div class="wallpaper-overlay">
-                        <h4>👥 Tripulação Mugiwara</h4>
-                        <div class="wallpaper-actions">
-                            <button class="btn-download"><i class="fas fa-download"></i> Download</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contato" class="contact">
-        <div class="container">
-            <div class="contact-content">
-                <div class="contact-info">
-                    <h2>🌊 Mantenha-se Atualizado!</h2>
-                    <p>Quer receber as últimas curiosidades e novidades sobre One Piece? Inscreva-se para receber atualizações!</p>
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>onepiece@world.com</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-globe"></i>
-                        <span>Grand Line, Novo Mundo</span>
-                    </div>
-                    <div class="contact-item">
-                        <i class="fas fa-ship"></i>
-                        <span>Navegando pelos Mares</span>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <h3>📧 Inscreva-se para Atualizações</h3>
-                    <div class="form-group">
-                        <input type="text" placeholder="Seu Nome de Pirata" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Seu Email" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Qual curiosidade você gostaria de saber?" rows="4" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">🏴‍☠️ Juntar-se à Tripulação</button>
-                </form>
-            </div>
-        </div>
-    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -289,10 +147,10 @@
                 <div class="footer-section">
                     <h4>🧭 Navegação</h4>
                     <ul>
-                        <li><a href="#home">Início</a></li>
-                        <li><a href="#curiosidades">Curiosidades</a></li>
-                        <li><a href="#wallpapers">Wallpapers</a></li>
-                        <li><a href="#contato">Contato</a></li>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="curiosidades.html">Curiosidades</a></li>
+                        <li><a href="wallpapers.html">Wallpapers</a></li>
+                        <li><a href="contato.html">Inscrever-se</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">

@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inscreva-se na newsletter One Piece World. Receba curiosidades exclusivas, wallpapers HD e novidades sobre mangá e anime direto no seu email.">
+    <meta name="keywords" content="One Piece newsletter, inscrever, curiosidades exclusivas, wallpapers, notícias mangá anime">
+    <meta name="author" content="One Piece World">
+    <meta name="robots" content="index, follow">
+    
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <title>Inscreva-se - One Piece World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header" role="banner">
+        <nav class="navbar" role="navigation" aria-label="Navegação principal">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="index.html" class="logo-link">
+                        <h2 class="logo-text-only">🏴‍☠️ One Piece World</h2>
+                    </a>
+                </div>
+                <ul class="nav-menu" role="menubar">
+                    <li class="nav-item" role="none">
+                        <a href="index.html" class="nav-link" role="menuitem">Início</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="curiosidades.html" class="nav-link" role="menuitem">Curiosidades</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="wallpapers.html" class="nav-link" role="menuitem">Wallpapers</a>
+                    </li>
+                    <li class="nav-item" role="none">
+                        <a href="contato.html" class="nav-link btn-subscribe active" role="menuitem" aria-current="page">Inscrever-se</a>
+                    </li>
+                </ul>
+                <button class="hamburger" aria-label="Abrir menu de navegação" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main role="main">
+        <!-- Page Header -->
+        <header class="page-header">
+            <div class="container">
+                <h1 id="page-title">🌊 Junte-se à Tripulação!</h1>
+                <p>Mantenha-se atualizado com as últimas curiosidades e novidades de One Piece</p>
+            </div>
+        </header>
+
+        <!-- Contact Section -->
+    <section class="contact-page">
+        <div class="container">
+            <div class="contact-content-page">
+                <div class="contact-info-page">
+                    <h2>📧 Newsletter One Piece World</h2>
+                    <p>Inscreva-se em nossa newsletter e receba:</p>
+                    
+                    <div class="newsletter-benefits">
+                        <div class="benefit-item">
+                            <i class="fas fa-star"></i>
+                            <span>Curiosidades exclusivas sobre One Piece</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-image"></i>
+                            <span>Wallpapers HD em primeira mão</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-newspaper"></i>
+                            <span>Novidades sobre mangá e anime</span>
+                        </div>
+                        <div class="benefit-item">
+                            <i class="fas fa-users"></i>
+                            <span>Acesso à comunidade de fãs</span>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <h3>📬 Informações de Contato</h3>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>onepiece@world.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-globe"></i>
+                            <span>Grand Line, Novo Mundo</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-ship"></i>
+                            <span>Navegando pelos Mares</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-page">
+                    <form class="contact-form" method="post" action="#" novalidate>
+                        <h3>🏴‍☠️ Inscreva-se para Atualizações</h3>
+                        <p>Torne-se um membro oficial da tripulação!</p>
+                        
+                        <div class="form-group">
+                            <label for="nome">Seu Nome de Pirata</label>
+                            <input type="text" id="nome" name="nome" placeholder="Ex: Monkey D. Luffy" autocomplete="name" minlength="2" maxlength="50" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Seu Email</label>
+                            <input type="email" id="email" name="email" placeholder="seu.email@example.com" autocomplete="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="interesse">Qual seu maior interesse?</label>
+                            <select id="interesse" name="interesse" autocomplete="off" required>
+                                <option value="">Selecione uma opção</option>
+                                <option value="curiosidades">Curiosidades sobre One Piece</option>
+                                <option value="wallpapers">Wallpapers e Arte</option>
+                                <option value="teorias">Teorias e Especulações</option>
+                                <option value="personagens">Análise de Personagens</option>
+                                <option value="manga">Atualizações do Mangá</option>
+                                <option value="anime">Novidades do Anime</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem (Opcional)</label>
+                            <textarea id="mensagem" name="mensagem" placeholder="Conte-nos qual curiosidade você gostaria de saber ou deixe uma mensagem para a tripulação!" rows="4" maxlength="500" spellcheck="true"></textarea>
+                        </div>
+                        
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="aceito" name="aceito" required>
+                                <span class="checkmark"></span>
+                                Aceito receber emails da One Piece World e concordo com os termos de uso
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">🏴‍☠️ Juntar-se à Tripulação</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="social-section">
+                <h3>🌐 Siga-nos nas Redes Sociais</h3>
+                <div class="social-links-page">
+                    <a href="#" class="social-link">
+                        <i class="fab fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-link">
+                        <i class="fab fa-youtube"></i>
+                        <span>YouTube</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="back-to-home">
+                <a href="index.html" class="btn btn-secondary">🏠 Voltar ao Início</a>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>🏴‍☠️ One Piece World</h3>
+                    <p>Navegando pelos mares do conhecimento e descobrindo os tesouros escondidos do mundo de One Piece.</p>
+                    <div class="social-links" role="group" aria-label="Links das redes sociais">
+                        <a href="#" title="Facebook" aria-label="Seguir no Facebook"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+                        <a href="#" title="Twitter" aria-label="Seguir no Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+                        <a href="#" title="Instagram" aria-label="Seguir no Instagram"><i class="fab fa-instagram" aria-hidden="true"></i></a>
+                        <a href="#" title="YouTube" aria-label="Inscrever-se no YouTube"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>🧭 Navegação</h4>
+                    <ul>
+                        <li><a href="index.html">Início</a></li>
+                        <li><a href="curiosidades.html">Curiosidades</a></li>
+                        <li><a href="wallpapers.html">Wallpapers</a></li>
+                        <li><a href="contato.html">Inscrever-se</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>🏝️ Mundo OP</h4>
+                    <ul>
+                        <li><a href="#">Mangá Oficial</a></li>
+                        <li><a href="#">Anime Oficial</a></li>
+                        <li><a href="#">Fãs Brasileiros</a></li>
+                        <li><a href="#">Novidades</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 One Piece World. Criado por fãs para fãs. | One Piece © Eiichiro Oda</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
