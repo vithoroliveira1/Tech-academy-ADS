@@ -51,14 +51,6 @@ TECH-ACADEMY/
 - **⚡ Performance**: Otimizado para carregamento rápido
 - **🔍 SEO**: Meta tags e estrutura otimizada para motores de busca
 
-## 🌐 Como Acessar
-
-O site está disponível através dos arquivos HTML locais. Para visualizar:
-
-1. Clone o repositório
-2. Abra o arquivo `index.html` em seu navegador
-3. Navegue pelas diferentes páginas
-
 ## 📱 Páginas Disponíveis
 
 ### 🏠 **Início** (`index.html`)
@@ -81,29 +73,14 @@ O site está disponível através dos arquivos HTML locais. Para visualizar:
 - Newsletter sobre One Piece
 - Integração com redes sociais
 
-## 🚀 Como Contribuir
-
-1. Faça um Fork do projeto
-2. Crie uma branch para sua feature (`git checkout -b feature/AmazingFeature`)
-3. Commit suas mudanças (`git commit -m 'Add some AmazingFeature'`)
-4. Push para a branch (`git push origin feature/AmazingFeature`)
-5. Abra um Pull Request
-
 ## 📝 Licença
 
 Este projeto é de uso educacional e foi criado para fins de aprendizado. One Piece é uma propriedade de Eiichiro Oda e Shueisha.
 
 ## 👨‍💻 Desenvolvedor
 
-**Vithor Oliveira** - Estudante de Análise e Desenvolvimento de Sistemas na Tech Academy
+**Vithor Oliveira** - Estudante de Análise e Desenvolvimento de Sistemas
 
-## 🙏 Agradecimentos
-
-- **Eiichiro Oda** pela criação de One Piece
-- **Tech Academy** pela oportunidade de aprendizado
-- **Comunidade One Piece** pela inspiração
-
----
 
 ⭐ **Se este projeto te ajudou, deixe uma estrela no repositório!**
 
